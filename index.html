@@ -58,10 +58,10 @@
     </nav>
 
     <!-- Hero section 텍스트 -->
-    <div class="absolute flex flex-col justify-end sm:justify-center items-center h-full z-10 text-center text-white p-6 sm:text-left">
+    <div class="absolute flex flex-col justify-end sm:justify-center sm:items-start items-center h-full z-10 text-center text-white p-6 sm:text-left">
         <h1 class="font-bold text-3xl leading-snug sm:text-left">We Ensure A Best Insurance Service</h1>
         <p class="text-base mt-4">We know how large objects will act, but things on a small scale just do not act that way.</p>
-        <div class="flex flex-col space-y-3 mt-6 w-full items-center">
+        <div class="flex flex-col gap-5 mt-6 w-full items-center sm:justify-center sm:flex-row">
             <button class="bg-blue-500 text-white px-4 py-2 rounded-full w-1/2">Get Quote Now</button>
             <button class="border border-blue-500 text-blue-500 px-4 py-2 rounded-full w-1/2">Learn More</button>
         </div>
@@ -97,22 +97,26 @@
         <h2 class="font-bold text-3xl text-center hidden sm:block">Industry</h2>
         <p class="text-center text-lg">Problems trying to resolve the conflict between 
             the two major realms of Classical physics: Newtonian mechanics </p>
-        <div class="relative flex flex-col sm:flex-row space-y-8 sm:space-y-0 sm:space-x-10">
-            <div class="absolute top-5">
-                <img src="./assets/section3/circle-box.png" class="w-16 h-16 rounded-full object-cover hidden"/>
-            </div>
-            <div class="bg-white p-8 rounded-lg">
-                <h3 class="font-bold text-lg text-black">Regina Miles</h3>
-                <h6 class="font-semibold text-blue-500">Designer</h6>
-                <h6 class="text-yellow-500 text-3xl">★ ★ ★ ★ ☆</h6>
-                <p class="text-gray-500 mt-4">This proved to be impossible using the traditional 
-                    concepts of space and time. Einstein developed a 
-                    new view of time first and then space. This proved 
-                    to be impossible using the traditional concepts of 
-                    space and time. Einstein developed a new view 
-                    of time first and then space.</p>
+        <div class="flex flex-col sm:flex-row space-y-8 sm:space-y-0 sm:space-x-10">
+            <div class="relative">
+                <div class="absolute -left-10 top-8">
+                    <img src="./assets/section3/circle-box.png" class="w-16 h-16 rounded-full object-cover hidden  sm:block"/>
+                </div>
+                <div class="bg-white p-8 rounded-lg">
+                    <h3 class="font-bold text-lg text-black">Regina Miles</h3>
+                    <h6 class="font-semibold text-blue-500">Designer</h6>
+                    <h6 class="text-yellow-500 text-3xl">★ ★ ★ ★ ☆</h6>
+                    <p class="text-gray-500 mt-4">This proved to be impossible using the traditional 
+                        concepts of space and time. Einstein developed a 
+                        new view of time first and then space. This proved 
+                        to be impossible using the traditional concepts of 
+                        space and time. Einstein developed a new view 
+                        of time first and then space.</p>
+                </div>
+                
             </div>
             
+            <div class="relative">
             <div class="bg-white p-8 rounded-lg">
                 <h3 class="font-bold text-lg text-black">Regina Miles</h3>
                 <h6 class="font-semibold text-blue-500">Designer</h6>
@@ -124,15 +128,16 @@
                     space and time. Einstein developed a new view 
                     of time first and then space.</p>
 
-                <div class="absolute right-50 top-5">
-                    <img src="./assets/section3/circle-box (1).png" class="w-16 h-16 rounded-full object-cover hidden" />
+                    <div class="absolute -left-10 top-8">
+                    <img src="./assets/section3/circle-box (1).png" class="w-16 h-16 rounded-full object-cover hidden sm:block" />
                 </div>
             </div>
+        </div>
         </div>
     </section>
 
     <!-- section4 -->
-    <section class="bg-gray-900 text-white text-center flex flex-col items-center p-10">
+    <section class="bg-gray-900 text-white text-center flex flex-col items-center py-24 px-10">
         <h2 class="font-bold text-3xl mb-6">We Are Optimists Who Love To Work Toghether</h2>
         <p class="mb-8">Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics</p>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
