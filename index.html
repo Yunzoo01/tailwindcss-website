@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Responsive Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+<!-- Hero Section -->
+<section class="relative w-full h-screen">
+    <!-- 그라데이션과 이미지 배경 -->
+    <div class="sm:absolute sm:inset-0 sm:bg-gradient-to-r sm:from-black sm:to-transparent sm:z-0"></div>
+    <div class="absolute inset-0 bg-cover bg-center z-0" style="background-image: url('./assets/section1/hero.jpg'); z-index: -1;"></div>
+    <div class="absolute inset-0 bg-black bg-opacity-70 sm:hidden"></div>
+
+    <!-- Navigation bar -->
+    <nav class="absolute top-0 left-0 w-full z-10 bg-gray-800 sm:bg-transparent p-4 sm:p-6">
+        <div class="flex justify-between items-center w-full">
+            <!-- 브랜드명 -->
+            <a class="text-white font-bold text-xl sm:text-2xl" href="#">BrandName</a>
+
+            <!-- 네비게이션 링크들 (데스크탑에서 보이도록) -->
+            <ul class="hidden sm:flex space-x-8 font-semibold">
+                <li><a class="text-white hover:text-gray-300" href="#">Home</a></li>
+                <li><a class="text-white hover:text-gray-300" href="#">Product</a></li>
+                <li><a class="text-white hover:text-gray-300" href="#">Pricing</a></li>
+                <li><a class="text-white hover:text-gray-300" href="#">Contact</a></li>
+            </ul>
+
+            <!-- 로그인 및 버튼 (데스크탑에서만 보임) -->
+            <div class="hidden sm:flex items-center space-x-5 font-semibold">
+                <a class="text-white hover:text-gray-300" href="#">Login</a>
+                <button class="bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600">
+                    <a href="#" class="text-sm font-bold">Become a member &rarr;</a>
+                </button>
+            </div>
+
+            <!-- 모바일 아이콘들 -->
+            <div class="flex space-x-4 sm:hidden">
+                <a href="#"><img src="./assets/section1/icn search .icn-xs.png" alt="Search" class="w-5 h-5"/></a>
+                <a href="#"><img src="./assets/section1/icn shopping-cart .icn-xs.png" alt="Shopping Cart" class="w-5 h-5"/></a>
+                <a href="#"><img src="./assets/section1/icn menu .icn-xs.png" alt="Menu" class="w-5 h-5"/></a>
+            </div>
+        </div>
+
+        <!-- 네비게이션 메뉴 (모바일에 맞게 세로로 배치) -->
+        <div class="mt-4 p-10 sm:hidden">
+            <ul class="space-y-4 text-center">
+                <li><a class="text-white text-lg" href="#">Home</a></li>
+                <li><a class="text-white text-lg" href="#">Product</a></li>
+                <li><a class="text-white text-lg" href="#">Pricing</a></li>
+                <li><a class="text-white text-lg" href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero section 텍스트 -->
+    <div class="absolute flex flex-col justify-end sm:justify-center sm:items-start items-center h-full z-10 text-center text-white p-6 sm:text-left">
+        <h1 class="font-bold text-3xl leading-snug sm:text-left">We Ensure A Best Insurance Service</h1>
+        <p class="text-base mt-4">We know how large objects will act, but things on a small scale just do not act that way.</p>
+        <div class="flex flex-col gap-5 mt-6 w-full items-center sm:justify-center sm:flex-row">
+            <button class="bg-blue-500 text-white px-4 py-2 rounded-full w-1/2">Get Quote Now</button>
+            <button class="border border-blue-500 text-blue-500 px-4 py-2 rounded-full w-1/2">Learn More</button>
+        </div>
+    </div>
+</section>
+
+
+    <!-- section2 -->
+    <section class="bg-gray-900 text-white flex flex-col sm:flex-row p-20 space-y-8 sm:space-y-0 sm:space-x-8">
+        <div class="flex flex-col items-center text-center p-5">
+            <img src="./assets/section2/icn resize .icn-xl.png" class="block sm:hidden"/>
+            <img src="./assets/section2/icn resize icn-xl.png" class="hidden sm:block"/>
+            <h5 class="mt-4">Peace of Mind</h5>
+            <p class="mt-2">So it really behaves like neither. Now we have given up.</p>
+        </div>
+        <div class="flex flex-col items-center text-center p-5">
+            <img src="./assets/section2/icn resize .icn-xl.png" class="block sm:hidden"/>
+            <img src="./assets/section2/icn resize .icn-xl (1).png" class="hidden sm:block"/>
+            <h5 class="mt-4">Set For Life</h5>
+            <p class="mt-2">They were used to create the machines that launched</p>
+        </div>
+        <div class="flex flex-col items-center text-center p-5">
+            <img src="./assets/section2/icn resize .icn-xl.png" class="block sm:hidden"/>
+            <img src="./assets/section2/icn resize .icn-xl (2).png" class="hidden sm:block"/>
+            <h5 class="mt-4">100% Satisfaction</h5>
+            <p class="mt-2">So it really behaves like neither. Now we have given up.</p>
+        </div>
+    </section>
+
+    <!-- section3 -->
+    <section class="bg-blue-300 flex flex-col justify-center items-center space-y-8 p-20 text-white">
+        <h2 class="font-bold text-3xl text-center sm:hidden">What <br /> Clients Say</h2>
+        <h2 class="font-bold text-3xl text-center hidden sm:block">Industry</h2>
+        <p class="text-center text-lg">Problems trying to resolve the conflict between 
+            the two major realms of Classical physics: Newtonian mechanics </p>
+        <div class="flex flex-col sm:flex-row space-y-8 sm:space-y-0 sm:space-x-10">
+            <div class="relative">
+                <div class="absolute -left-10 top-8">
+                    <img src="./assets/section3/circle-box.png" class="w-16 h-16 rounded-full object-cover hidden  sm:block"/>
+                </div>
+                <div class="bg-white p-8 rounded-lg">
+                    <h3 class="font-bold text-lg text-black">Regina Miles</h3>
+                    <h6 class="font-semibold text-blue-500">Designer</h6>
+                    <h6 class="text-yellow-500 text-3xl">★ ★ ★ ★ ☆</h6>
+                    <p class="text-gray-500 mt-4">This proved to be impossible using the traditional 
+                        concepts of space and time. Einstein developed a 
+                        new view of time first and then space. This proved 
+                        to be impossible using the traditional concepts of 
+                        space and time. Einstein developed a new view 
+                        of time first and then space.</p>
+                </div>
+                
+            </div>
+            
+            <div class="relative">
+            <div class="bg-white p-8 rounded-lg">
+                <h3 class="font-bold text-lg text-black">Regina Miles</h3>
+                <h6 class="font-semibold text-blue-500">Designer</h6>
+                <h6 class="text-yellow-500 text-3xl">★ ★ ★ ★ ☆</h6>
+                <p class="text-gray-500 mt-4">This proved to be impossible using the traditional 
+                    concepts of space and time. Einstein developed a 
+                    new view of time first and then space. This proved 
+                    to be impossible using the traditional concepts of 
+                    space and time. Einstein developed a new view 
+                    of time first and then space.</p>
+
+                    <div class="absolute -left-10 top-8">
+                    <img src="./assets/section3/circle-box (1).png" class="w-16 h-16 rounded-full object-cover hidden sm:block" />
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- section4 -->
+    <section class="bg-gray-900 text-white text-center flex flex-col items-center py-24 px-10">
+        <h2 class="font-bold text-3xl mb-6">We Are Optimists Who Love To Work Toghether</h2>
+        <p class="mb-8">Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            <div class="relative">
+                <img src="./assets/section4/post.1.png" class="w-full"/>
+                <div class="absolute inset-0 bg-black bg-opacity-50 p-6 flex flex-col justify-between">
+                    <h6 class="text-left font-semibold">Tax Management</h6>
+                    <h3 class="text-left font-bold text-xl">Life Tips From Top Ten Adventure Travelers</h3>
+                    <button class="bg-blue-500 text-white px-4 py-2 text-sm font-bold self-start">View Project</button>
+                </div>
+            </div>
+            <div class="relative">
+                <img src="./assets/section4/post.2.png" class="w-full"/>
+                <div class="absolute inset-0 bg-black bg-opacity-50 p-6 flex flex-col justify-between">
+                    <h6 class="text-left font-semibold">Tax Management</h6>
+                    <h3 class="text-left font-bold text-xl">Life Tips From Top Ten Adventure Travelers</h3>
+                    <button class="bg-blue-500 text-white px-4 py-2 text-sm font-bold self-start">View Project</button>
+                </div>
+            </div>
+            <div class="relative">
+                <img src="./assets/section4/post.3.png" class="w-full"/>
+                <div class="absolute inset-0 bg-black bg-opacity-50 p-6 flex flex-col justify-between">
+                    <h6 class="text-left font-semibold">Tax Management</h6>
+                    <h3 class="text-left font-bold text-xl">Life Tips From Top Ten Adventure Travelers</h3>
+                    <button class="bg-blue-500 text-white px-4 py-2 text-sm font-bold self-start">View Project</button>
+                </div>
+            </div>
+            <div class="relative">
+                <img src="./assets/section4/post.4.png" class="w-full"/>
+                <div class="absolute inset-0 bg-black bg-opacity-50 p-6 flex flex-col justify-between">
+                    <h6 class="text-left font-semibold">Tax Management</h6>
+                    <h3 class="text-left font-bold text-xl">Life Tips From Top Ten Adventure Travelers</h3>
+                    <button class="bg-blue-500 text-white px-4 py-2 text-sm font-bold self-start">View Project</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
